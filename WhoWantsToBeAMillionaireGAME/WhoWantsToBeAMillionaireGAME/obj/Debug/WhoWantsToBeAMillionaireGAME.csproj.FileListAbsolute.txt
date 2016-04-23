@@ -7,3 +7,4 @@ C:\Users\Borko\Desktop\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeAMi
 C:\Users\Borko\Desktop\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeAMillionaireGAME\obj\Debug\WhoWantsToBeAMillionaireGAME.csproj.GenerateResource.Cache
 C:\Users\Borko\Desktop\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeAMillionaireGAME\obj\Debug\WhoWantsToBeAMillionaireGAME.exe
 C:\Users\Borko\Desktop\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeAMillionaireGAME\obj\Debug\WhoWantsToBeAMillionaireGAME.pdb
+C:\Users\Borko\Desktop\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeAMillionaireGAME\obj\Debug\WhoWantsToBeAMillionaireGAME.Form2.resources

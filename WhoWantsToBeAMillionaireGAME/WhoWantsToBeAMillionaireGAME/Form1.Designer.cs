@@ -107,6 +107,7 @@
             this.newGame2.Size = new System.Drawing.Size(460, 68);
             this.newGame2.TabIndex = 11;
             this.newGame2.TabStop = false;
+            this.newGame2.Click += new System.EventHandler(this.newGame2_Click);
             this.newGame2.MouseLeave += new System.EventHandler(this.newGame2_MouseLeave);
             // 
             // score2

@@ -83,5 +83,14 @@ namespace WhoWantsToBeAMillionaireGAME
             this.volumeOn.Visible = true;
             this.volumeOff.Visible = false;
         }
+
+        private void newGame2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form2 = new Form2();
+            form2.Closed += (s, args) => this.Close();
+            form2.Show();
+
+        }
     }
 }
