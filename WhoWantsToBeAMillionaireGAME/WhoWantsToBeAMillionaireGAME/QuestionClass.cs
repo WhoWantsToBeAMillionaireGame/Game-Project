@@ -18,4 +18,5 @@
 
         public List<string> Answers { get; set; }
     }
+
 }
