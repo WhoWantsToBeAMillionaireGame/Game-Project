@@ -8,3 +8,8 @@ C:\Users\Borko\Desktop\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeAMi
 C:\Users\Borko\Desktop\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeAMillionaireGAME\obj\Debug\WhoWantsToBeAMillionaireGAME.exe
 C:\Users\Borko\Desktop\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeAMillionaireGAME\obj\Debug\WhoWantsToBeAMillionaireGAME.pdb
 C:\Users\Borko\Desktop\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeAMillionaireGAME\obj\Debug\WhoWantsToBeAMillionaireGAME.Form2.resources
+C:\Users\Borko\Desktop\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeAMillionaireGAME\bin\Debug\Interop.WMPLib.dll
+C:\Users\Borko\Desktop\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeAMillionaireGAME\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Borko\Desktop\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeAMillionaireGAME\obj\Debug\Interop.WMPLib.dll
+C:\Users\Borko\Desktop\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeAMillionaireGAME\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Borko\Desktop\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeAMillionaireGAME\obj\Debug\WhoWantsToBeAMillionaireGAME.csproj.ResolveComReference.cache

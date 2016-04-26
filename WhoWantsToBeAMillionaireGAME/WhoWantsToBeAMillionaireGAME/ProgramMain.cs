@@ -26,7 +26,7 @@ namespace WhoWantsToBeAMillionaireGAME
             var question1 = new QuestionClass(
                 "През коя година е създаден футболен клуб Левски",
                 "1914",
-                new List<string> { "1914", "1911", "1919", "1916" });
+                new List<string> { "1912", "1911", "1914", "1916" });
             questionData.Add(question1);
 
             var question2 = new QuestionClass("През коя година България става член на Европейският Съюз",
