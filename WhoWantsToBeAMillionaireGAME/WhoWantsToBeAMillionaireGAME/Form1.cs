@@ -3,21 +3,19 @@
     #region
 
     using System;
+    using System.Media;
     using System.Windows.Forms;
-
-    using WMPLib;
 
     #endregion
 
     public partial class Form1 : Form
     {
-        readonly WindowsMediaPlayer player = new WindowsMediaPlayerClass();
-
+        private SoundPlayer player = new SoundPlayer();
         public Form1()
         {
+            this.player.SoundLocation = "musicMP3.wav";
+            this.player.Play();
             this.InitializeComponent();
-            this.player.URL = "musicMP3.mp3";
-            this.player.controls.play();
         }
 
         private void exit1_MouseHover(object sender, EventArgs e)
@@ -35,7 +33,6 @@
         private void Form1_Load(object sender, EventArgs e)
         {
             this.newGame2.Visible = false;
-            this.score2.Visible = false;
             this.exit2.Visible = false;
             this.volumeOff.Visible = false;
         }
@@ -48,7 +45,7 @@
 
         private void newGame2_Click(object sender, EventArgs e)
         {
-            this.player.controls.stop();
+            this.player.Stop();
             this.Hide();
             var form2 = new Form2();
             form2.Closed += (s, args) => this.Close();
@@ -69,30 +66,28 @@
         {
         }
 
-        private void score1_MouseHover(object sender, EventArgs e)
-        {
-            this.score1.Visible = false;
-            this.score2.Visible = true;
-        }
-
-        private void score2_MouseLeave(object sender, EventArgs e)
-        {
-            this.score1.Visible = true;
-            this.score2.Visible = false;
-        }
-
-        private void volumeOff_Click(object sender, EventArgs e)
+       private void volumeOff_Click(object sender, EventArgs e)
         {
             this.volumeOn.Visible = true;
             this.volumeOff.Visible = false;
-            this.player.controls.play();
+            this.player.Play();
         }
 
         private void volumeOn_Click(object sender, EventArgs e)
         {
             this.volumeOn.Visible = false;
             this.volumeOff.Visible = true;
-            this.player.controls.pause();
+            this.player.Stop();
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void exit2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
