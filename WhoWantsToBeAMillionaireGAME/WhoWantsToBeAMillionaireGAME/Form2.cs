@@ -27,7 +27,7 @@
 
         public Form2()
         {
-            this.player.SoundLocation = "musicMP3.wav";
+            this.player.SoundLocation = "../../Resources/musicMP3.wav";
             this.player.Play();
             this.InitializeComponent();
         }
