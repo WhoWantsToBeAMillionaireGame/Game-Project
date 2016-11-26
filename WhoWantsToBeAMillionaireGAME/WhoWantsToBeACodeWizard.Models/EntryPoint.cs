@@ -1,7 +1,10 @@
 ﻿namespace WhoWantsToBeACodeWizard.Data
 {
-    using Models.Models;
+    using System;
     using System.Collections.Generic;
+    using System.Linq;
+
+    using Models.Models;
 
     public class EntryPoint
     {
@@ -9,6 +12,16 @@
         {
             ApplicationDbContext context = new ApplicationDbContext();
 
+            var questions = context.Questions.GroupBy(q => q.ComplexityLevel).ToList().Select(gr => gr.FirstOrDefault(q => q.IsUsed == false));
+
+            foreach (Question question in questions)
+            {
+                Console.WriteLine($"{question.Id} - {question.IsUsed} - {question.ComplexityLevel}");
+            }
+        }
+
+        private static void Initialize(ApplicationDbContext context)
+        {
             var questionData = new List<Question>();
 
             var answer50 = new Answer("Водещият е затруднен");

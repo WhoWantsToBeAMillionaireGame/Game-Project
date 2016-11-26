@@ -273,6 +273,7 @@
         private void Run()
         {
             var currentQuestion = this.Questions[this.count];
+            MarkQuestionAsUsed(this.Questions[this.count]);
 
             this.AwardGenerator();
 
@@ -350,11 +351,12 @@
                     this.answerLabel4.Font = new Font(shuffledAnswers[3].AnswerDescription, size);
                 }
             }
+
+            MarkQuestionAsUsed(this.Questions[this.count]);
         }
 
         private void AnswerOne()
         {
-            MarkQuestionAsUsed(this.Questions[this.count]);
             var answer = this.answerLabel1.Text;
             var currectAnswer = this.Questions[this.count].Answer.AnswerDescription;
             if (answer == currectAnswer)
@@ -395,8 +397,6 @@
 
         private void AnswerTwo()
         {
-            MarkQuestionAsUsed(this.Questions[this.count]);
-
             var answer = this.answerLabel2.Text;
             var currectAnswer = this.Questions[this.count].Answer.AnswerDescription;
             if (answer == currectAnswer)
@@ -437,7 +437,6 @@
 
         private void AnswerThree()
         {
-            MarkQuestionAsUsed(this.Questions[this.count]);
             var answer = this.answerLabel3.Text;
             var currectAnswer = this.Questions[this.count].Answer.AnswerDescription;
             if (answer == currectAnswer)
@@ -482,7 +481,6 @@
             var currectAnswer = this.Questions[this.count].Answer.AnswerDescription;
             if (answer == currectAnswer)
             {
-                MarkQuestionAsUsed(this.Questions[this.count]);
                 this.count++;
                 this.answerBoxGreen4.Visible = true;
                 this.answerBox4.Visible = false;

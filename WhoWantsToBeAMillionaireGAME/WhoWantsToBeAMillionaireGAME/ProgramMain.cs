@@ -10,7 +10,7 @@
 
     static class ProgramMain
     {
-        private static ApplicationDbContext dbContext = new ApplicationDbContext();
+        private static ApplicationDbContext context = new ApplicationDbContext();
 
         /// <summary>
         /// The main entry point for the application.
@@ -25,7 +25,12 @@
 
         public static List<Question> Data()
         {
-            List<Question> questions = dbContext.Questions.ToList();
+            var questions = context.Questions.GroupBy(q => q.ComplexityLevel).ToList().Select(gr => gr.FirstOrDefault(q => q.IsUsed == false)).ToList();
+
+            if(questions.Any(q => q == null))
+            {
+                throw new ArgumentException("There are no questions for that type");
+            }
 
             return questions;
         }
@@ -33,7 +38,7 @@
         public static void MarkQuestionAsUsed(Question question)
         {
             question.IsUsed = true;
-            dbContext.SaveChanges();
+            context.SaveChanges();
         }
     }
 }
