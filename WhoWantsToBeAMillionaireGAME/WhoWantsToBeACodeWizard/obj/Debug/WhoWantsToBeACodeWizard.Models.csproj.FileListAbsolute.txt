@@ -1,0 +1,6 @@
+D:\Study\Repositories\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeACodeWizard\obj\Debug\WhoWantsToBeACodeWizard.Models.csprojResolveAssemblyReference.cache
+D:\Study\Repositories\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeACodeWizard\bin\Debug\WhoWantsToBeACodeWizard.Models.exe.config
+D:\Study\Repositories\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeACodeWizard\bin\Debug\WhoWantsToBeACodeWizard.Models.exe
+D:\Study\Repositories\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeACodeWizard\bin\Debug\WhoWantsToBeACodeWizard.Models.pdb
+D:\Study\Repositories\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeACodeWizard\obj\Debug\WhoWantsToBeACodeWizard.Models.exe
+D:\Study\Repositories\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeACodeWizard\obj\Debug\WhoWantsToBeACodeWizard.Models.pdb

@@ -1,0 +1,12 @@
+D:\Study\Repositories\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeACodeWizard.Models\obj\Debug\WhoWantsToBeACodeWizard.Data.csprojResolveAssemblyReference.cache
+D:\Study\Repositories\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeACodeWizard.Models\bin\Debug\WhoWantsToBeACodeWizard.Data.exe.config
+D:\Study\Repositories\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeACodeWizard.Models\bin\Debug\WhoWantsToBeACodeWizard.Data.exe
+D:\Study\Repositories\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeACodeWizard.Models\bin\Debug\WhoWantsToBeACodeWizard.Data.pdb
+D:\Study\Repositories\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeACodeWizard.Models\bin\Debug\EntityFramework.dll
+D:\Study\Repositories\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeACodeWizard.Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\Study\Repositories\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeACodeWizard.Models\bin\Debug\WhoWantsToBeACodeWizard.Models.exe
+D:\Study\Repositories\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeACodeWizard.Models\bin\Debug\WhoWantsToBeACodeWizard.Models.pdb
+D:\Study\Repositories\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeACodeWizard.Models\bin\Debug\EntityFramework.xml
+D:\Study\Repositories\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeACodeWizard.Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Study\Repositories\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeACodeWizard.Models\obj\Debug\WhoWantsToBeACodeWizard.Data.exe
+D:\Study\Repositories\Game-Project\WhoWantsToBeAMillionaireGAME\WhoWantsToBeACodeWizard.Models\obj\Debug\WhoWantsToBeACodeWizard.Data.pdb
