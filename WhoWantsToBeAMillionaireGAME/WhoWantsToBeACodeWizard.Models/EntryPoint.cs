@@ -12,11 +12,14 @@
         {
             ApplicationDbContext context = new ApplicationDbContext();
 
-            var questions = context.Questions.GroupBy(q => q.ComplexityLevel).ToList().Select(gr => gr.FirstOrDefault(q => q.IsUsed == false));
+            Initialize(context);
+
+            //var questions = context.Questions.GroupBy(q => q.ComplexityLevel).ToList().Select(gr => gr.OrderBy(q => q.Views).FirstOrDefault());
+            var questions = context.Questions.OrderBy(q => q.Views).Take(15);
 
             foreach (Question question in questions)
             {
-                Console.WriteLine($"{question.Id} - {question.IsUsed} - {question.ComplexityLevel}");
+                Console.WriteLine($"{question.Id} - {question.Views} - {question.ComplexityLevel}");
             }
         }
 

@@ -38,7 +38,7 @@
 
         public virtual ICollection<Answer> Answers { get; set; }
 
-        public bool IsUsed { get; set; }
+        public int Views { get; set; }
 
         public ComplexityLevel ComplexityLevel { get; set; }
     }

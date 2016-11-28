@@ -8,7 +8,8 @@
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
+            this.AutomaticMigrationsEnabled = true;
+            this.AutomaticMigrationDataLossAllowed = true;
         }
 
         protected override void Seed(WhoWantsToBeACodeWizard.Data.ApplicationDbContext context)

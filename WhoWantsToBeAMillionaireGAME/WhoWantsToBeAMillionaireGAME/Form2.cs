@@ -903,7 +903,7 @@
 
         private void MarkQuestionAsUsed(Question question)
         {
-            ProgramMain.MarkQuestionAsUsed(question);
+            ProgramMain.MarkQuestionAsViewed(question);
         }
     }
 }

@@ -25,7 +25,7 @@
 
         public static List<Question> Data()
         {
-            var questions = context.Questions.GroupBy(q => q.ComplexityLevel).ToList().Select(gr => gr.FirstOrDefault(q => q.IsUsed == false)).ToList();
+            var questions = context.Questions.GroupBy(q => q.ComplexityLevel).ToList().Select(gr => gr.OrderBy(q=> q.Views).FirstOrDefault()).ToList();
 
             if(questions.Any(q => q == null))
             {
@@ -35,9 +35,9 @@
             return questions;
         }
 
-        public static void MarkQuestionAsUsed(Question question)
+        public static void MarkQuestionAsViewed(Question question)
         {
-            question.IsUsed = true;
+            question.Views++;
             context.SaveChanges();
         }
     }
