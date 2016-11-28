@@ -138,28 +138,26 @@
             }
             if (this.count == 1)
             {
-                this.win50.Visible = true;
+                //this.win50.Visible = true;
                 this.getYourMoney.Visible = false;
                 this.newGame1.Visible = true;
                 return;
             }
             if (this.count == 2)
             {
-                this.win100.Visible = true;
+                //this.win100.Visible = true;
                 this.getYourMoney.Visible = false;
                 this.newGame1.Visible = true;
                 return;
             }
             if (this.count == 3)
             {
-                this.win150.Visible = true;
                 this.getYourMoney.Visible = false;
                 this.newGame1.Visible = true;
                 return;
             }
             if (this.count == 4)
             {
-                this.win200.Visible = true;
                 this.getYourMoney.Visible = false;
                 this.newGame1.Visible = true;
                 return;
@@ -173,71 +171,22 @@
             }
             if (this.count == 6)
             {
-                this.win500.Visible = true;
                 this.getYourMoney.Visible = false;
                 this.newGame1.Visible = true;
                 return;
             }
             if (this.count == 7)
             {
-                this.win1000.Visible = true;
                 this.getYourMoney.Visible = false;
                 this.newGame1.Visible = true;
                 return;
             }
             if (this.count == 8)
             {
-                this.win1500.Visible = true;
                 this.getYourMoney.Visible = false;
                 this.newGame1.Visible = true;
 
                 return;
-            }
-            if (this.count == 9)
-            {
-                this.win2000.Visible = true;
-                this.getYourMoney.Visible = false;
-                this.newGame1.Visible = true;
-
-                return;
-            }
-            if (this.count == 10)
-            {
-                this.Lose3.Visible = true;
-                this.getYourMoney.Visible = false;
-                this.newGame1.Visible = true;
-
-                return;
-            }
-            if (this.count == 11)
-            {
-                this.win5000.Visible = true;
-                this.getYourMoney.Visible = false;
-                this.newGame1.Visible = true;
-
-                return;
-            }
-            if (this.count == 12)
-            {
-                this.win10000.Visible = true;
-                this.getYourMoney.Visible = false;
-                this.newGame1.Visible = true;
-
-                return;
-            }
-            if (this.count == 13)
-            {
-                this.win25000.Visible = true;
-                this.getYourMoney.Visible = false;
-                this.newGame1.Visible = true;
-
-                return;
-            }
-            if (this.count == 14)
-            {
-                this.win50000.Visible = true;
-                this.getYourMoney.Visible = false;
-                this.newGame1.Visible = true;
             }
         }
 
@@ -261,8 +210,6 @@
             this.volumeOff.Visible = true;
             this.player.Stop();
         }
-
-
         #endregion
 
         protected override void OnFormClosing(FormClosingEventArgs e)
@@ -276,6 +223,11 @@
             MarkQuestionAsUsed(this.Questions[this.count]);
 
             this.AwardGenerator();
+
+            if (this.count >= 5)
+            {
+                this.getYourMoney.Visible = true;
+            }
 
             startSizeQuestion = this.questionLabel.Font.Size;
             startSizeAnswer = this.answerLabel1.Font.Size;
@@ -517,153 +469,7 @@
 
         private void AwardGenerator()
         {
-            if (this.count == 0)
-            {
-                this.Capture1.Visible = true;
-                this.Capture2.Visible = false;
-                this.Capture3.Visible = false;
-                this.Capture4.Visible = false;
-                this.Capture5.Visible = false;
-                this.Capture6.Visible = false;
-                this.Capture7.Visible = false;
-                this.Capture8.Visible = false;
-                this.Capture9.Visible = false;
-                this.Capture10.Visible = false;
-                return;
-            }
-            if (this.count == 1)
-            {
-                this.Capture1.Visible = false;
-                this.Capture2.Visible = true;
-                this.Capture3.Visible = false;
-                this.Capture4.Visible = false;
-                this.Capture5.Visible = false;
-                this.Capture6.Visible = false;
-                this.Capture7.Visible = false;
-                this.Capture8.Visible = false;
-                this.Capture9.Visible = false;
-                this.Capture10.Visible = false;
-                return;
-            }
-            if (this.count == 2)
-            {
-                this.Capture1.Visible = false;
-                this.Capture2.Visible = false;
-                this.Capture3.Visible = true;
-                this.Capture4.Visible = false;
-                this.Capture5.Visible = false;
-                this.Capture6.Visible = false;
-                this.Capture7.Visible = false;
-                this.Capture8.Visible = false;
-                this.Capture9.Visible = false;
-                this.Capture10.Visible = false;
-                return;
-            }
-
-            if (this.count == 3)
-            {
-                this.Capture1.Visible = false;
-                this.Capture2.Visible = false;
-                this.Capture3.Visible = false;
-                this.Capture4.Visible = true;
-                this.Capture5.Visible = false;
-                this.Capture6.Visible = false;
-                this.Capture7.Visible = false;
-                this.Capture8.Visible = false;
-                this.Capture9.Visible = false;
-                this.Capture10.Visible = false;
-                return;
-            }
-
-            if (this.count == 4)
-            {
-                this.Capture1.Visible = false;
-                this.Capture2.Visible = false;
-                this.Capture3.Visible = false;
-                this.Capture4.Visible = false;
-                this.Capture5.Visible = true;
-                this.Capture6.Visible = false;
-                this.Capture7.Visible = false;
-                this.Capture8.Visible = false;
-                this.Capture9.Visible = false;
-                this.Capture10.Visible = false;
-                return;
-            }
-
-            if (this.count == 5)
-            {
-                this.Capture1.Visible = false;
-                this.Capture2.Visible = false;
-                this.Capture3.Visible = false;
-                this.Capture4.Visible = false;
-                this.Capture5.Visible = false;
-                this.Capture6.Visible = true;
-                this.Capture7.Visible = false;
-                this.Capture8.Visible = false;
-                this.Capture9.Visible = false;
-                this.Capture10.Visible = false;
-                return;
-            }
-
-            if (this.count == 6)
-            {
-                this.Capture1.Visible = false;
-                this.Capture2.Visible = false;
-                this.Capture3.Visible = false;
-                this.Capture4.Visible = false;
-                this.Capture5.Visible = false;
-                this.Capture6.Visible = false;
-                this.Capture7.Visible = true;
-                this.Capture8.Visible = false;
-                this.Capture9.Visible = false;
-                this.Capture10.Visible = false;
-                return;
-            }
-
-            if (this.count == 7)
-            {
-                this.Capture1.Visible = false;
-                this.Capture2.Visible = false;
-                this.Capture3.Visible = false;
-                this.Capture4.Visible = false;
-                this.Capture5.Visible = false;
-                this.Capture6.Visible = false;
-                this.Capture7.Visible = false;
-                this.Capture8.Visible = true;
-                this.Capture9.Visible = false;
-                this.Capture10.Visible = false;
-                return;
-            }
-
-            if (this.count == 8)
-            {
-                this.Capture1.Visible = false;
-                this.Capture2.Visible = false;
-                this.Capture3.Visible = false;
-                this.Capture4.Visible = false;
-                this.Capture5.Visible = false;
-                this.Capture6.Visible = false;
-                this.Capture7.Visible = false;
-                this.Capture8.Visible = false;
-                this.Capture9.Visible = true;
-                this.Capture10.Visible = false;
-                return;
-            }
-
-            if (this.count == 9)
-            {
-                this.Capture1.Visible = false;
-                this.Capture2.Visible = false;
-                this.Capture3.Visible = false;
-                this.Capture4.Visible = false;
-                this.Capture5.Visible = false;
-                this.Capture6.Visible = false;
-                this.Capture7.Visible = false;
-                this.Capture8.Visible = false;
-                this.Capture9.Visible = false;
-                this.Capture10.Visible = true;
-                return;
-            }
+            this.questionInfo.Text = $"Въпрос №: {this.count + 1}";
         }
 
         private void EnableAnswers()
@@ -681,7 +487,7 @@
         private void ResetAllValues()
         {
             this.nextButton.Visible = false;
-            this.getYourMoney.Visible = true;
+            this.getYourMoney.Visible = false;
 
             this.answerBoxGreen1.Visible = false;
             this.answerBox1.Visible = true;
@@ -727,10 +533,6 @@
             if (this.count >= 5 && this.count < 10)
             {
                 this.Lose2.Visible = true;
-            }
-            if (this.count >= 10 && this.count < 15)
-            {
-                this.Lose3.Visible = true;
             }
         }
 
