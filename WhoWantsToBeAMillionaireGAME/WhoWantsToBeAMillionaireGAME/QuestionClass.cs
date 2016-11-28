@@ -1,11 +1,10 @@
 ﻿namespace WhoWantsToBeAMillionaireGAME
 {
-    using System.Collections;
     using System.Collections.Generic;
 
     public class QuestionClass
     {
-        public QuestionClass(string question, string answer, List<string> answers)
+        public QuestionClass(string question, string answer, IList<string> answers)
         {
             this.Question = question;
             this.Answer = answer;
@@ -16,7 +15,7 @@
 
         public string Answer { get; set; }
 
-        public List<string> Answers { get; set; }
+        public IList<string> Answers { get; set; }
     }
 
 }
