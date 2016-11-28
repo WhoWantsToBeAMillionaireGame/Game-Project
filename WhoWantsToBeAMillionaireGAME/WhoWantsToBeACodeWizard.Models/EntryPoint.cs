@@ -14,8 +14,7 @@
 
             Initialize(context);
 
-            //var questions = context.Questions.GroupBy(q => q.ComplexityLevel).ToList().Select(gr => gr.OrderBy(q => q.Views).FirstOrDefault());
-            var questions = context.Questions.OrderBy(q => q.Views).Take(15);
+            var questions = context.Questions.GroupBy(q => q.ComplexityLevel).ToList().Select(gr => gr.OrderBy(q => q.Views).FirstOrDefault());
 
             foreach (Question question in questions)
             {

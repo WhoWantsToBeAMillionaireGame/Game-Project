@@ -15,7 +15,7 @@
 
     public partial class Form2 : Form
     {
-        private const int CurrectAnswertoWin = 15;
+        private const int CorrectAnswersToWin = 10;
         
         private static readonly Random Random = new Random();
 
@@ -369,7 +369,7 @@
                 this.nextButton.Visible = true;
                 this.getYourMoney.Visible = false;
 
-                if (this.count == CurrectAnswertoWin)
+                if (this.count == CorrectAnswersToWin)
                 {
                     this.winnerBox.Visible = true;
                     this.nextButton.Visible = false;
@@ -409,7 +409,7 @@
                 this.nextButton.Visible = true;
                 this.getYourMoney.Visible = false;
 
-                if (this.count == CurrectAnswertoWin)
+                if (this.count == CorrectAnswersToWin)
                 {
                     this.winnerBox.Visible = true;
                     this.nextButton.Visible = false;
@@ -449,7 +449,7 @@
                 this.nextButton.Visible = true;
                 this.getYourMoney.Visible = false;
 
-                if (this.count == CurrectAnswertoWin)
+                if (this.count == CorrectAnswersToWin)
                 {
                     this.winnerBox.Visible = true;
                     this.nextButton.Visible = false;
@@ -489,7 +489,7 @@
                 this.nextButton.Visible = true;
                 this.getYourMoney.Visible = false;
 
-                if (this.count == CurrectAnswertoWin)
+                if (this.count == CorrectAnswersToWin)
                 {
                     this.winnerBox.Visible = true;
                     this.nextButton.Visible = false;
@@ -529,11 +529,6 @@
                 this.Capture8.Visible = false;
                 this.Capture9.Visible = false;
                 this.Capture10.Visible = false;
-                this.Capture11.Visible = false;
-                this.Capture12.Visible = false;
-                this.Capture13.Visible = false;
-                this.Capture14.Visible = false;
-                this.Capture15.Visible = false;
                 return;
             }
             if (this.count == 1)
@@ -548,11 +543,6 @@
                 this.Capture8.Visible = false;
                 this.Capture9.Visible = false;
                 this.Capture10.Visible = false;
-                this.Capture11.Visible = false;
-                this.Capture12.Visible = false;
-                this.Capture13.Visible = false;
-                this.Capture14.Visible = false;
-                this.Capture15.Visible = false;
                 return;
             }
             if (this.count == 2)
@@ -567,11 +557,6 @@
                 this.Capture8.Visible = false;
                 this.Capture9.Visible = false;
                 this.Capture10.Visible = false;
-                this.Capture11.Visible = false;
-                this.Capture12.Visible = false;
-                this.Capture13.Visible = false;
-                this.Capture14.Visible = false;
-                this.Capture15.Visible = false;
                 return;
             }
 
@@ -587,11 +572,6 @@
                 this.Capture8.Visible = false;
                 this.Capture9.Visible = false;
                 this.Capture10.Visible = false;
-                this.Capture11.Visible = false;
-                this.Capture12.Visible = false;
-                this.Capture13.Visible = false;
-                this.Capture14.Visible = false;
-                this.Capture15.Visible = false;
                 return;
             }
 
@@ -607,11 +587,6 @@
                 this.Capture8.Visible = false;
                 this.Capture9.Visible = false;
                 this.Capture10.Visible = false;
-                this.Capture11.Visible = false;
-                this.Capture12.Visible = false;
-                this.Capture13.Visible = false;
-                this.Capture14.Visible = false;
-                this.Capture15.Visible = false;
                 return;
             }
 
@@ -627,11 +602,6 @@
                 this.Capture8.Visible = false;
                 this.Capture9.Visible = false;
                 this.Capture10.Visible = false;
-                this.Capture11.Visible = false;
-                this.Capture12.Visible = false;
-                this.Capture13.Visible = false;
-                this.Capture14.Visible = false;
-                this.Capture15.Visible = false;
                 return;
             }
 
@@ -647,11 +617,6 @@
                 this.Capture8.Visible = false;
                 this.Capture9.Visible = false;
                 this.Capture10.Visible = false;
-                this.Capture11.Visible = false;
-                this.Capture12.Visible = false;
-                this.Capture13.Visible = false;
-                this.Capture14.Visible = false;
-                this.Capture15.Visible = false;
                 return;
             }
 
@@ -667,11 +632,6 @@
                 this.Capture8.Visible = true;
                 this.Capture9.Visible = false;
                 this.Capture10.Visible = false;
-                this.Capture11.Visible = false;
-                this.Capture12.Visible = false;
-                this.Capture13.Visible = false;
-                this.Capture14.Visible = false;
-                this.Capture15.Visible = false;
                 return;
             }
 
@@ -687,11 +647,6 @@
                 this.Capture8.Visible = false;
                 this.Capture9.Visible = true;
                 this.Capture10.Visible = false;
-                this.Capture11.Visible = false;
-                this.Capture12.Visible = false;
-                this.Capture13.Visible = false;
-                this.Capture14.Visible = false;
-                this.Capture15.Visible = false;
                 return;
             }
 
@@ -707,111 +662,7 @@
                 this.Capture8.Visible = false;
                 this.Capture9.Visible = false;
                 this.Capture10.Visible = true;
-                this.Capture11.Visible = false;
-                this.Capture12.Visible = false;
-                this.Capture13.Visible = false;
-                this.Capture14.Visible = false;
-                this.Capture15.Visible = false;
                 return;
-            }
-
-            if (this.count == 10)
-            {
-                this.Capture1.Visible = false;
-                this.Capture2.Visible = false;
-                this.Capture3.Visible = false;
-                this.Capture4.Visible = false;
-                this.Capture5.Visible = false;
-                this.Capture6.Visible = false;
-                this.Capture7.Visible = false;
-                this.Capture8.Visible = false;
-                this.Capture9.Visible = false;
-                this.Capture10.Visible = false;
-                this.Capture11.Visible = true;
-                this.Capture12.Visible = false;
-                this.Capture13.Visible = false;
-                this.Capture14.Visible = false;
-                this.Capture15.Visible = false;
-                return;
-            }
-
-            if (this.count == 11)
-            {
-                this.Capture1.Visible = false;
-                this.Capture2.Visible = false;
-                this.Capture3.Visible = false;
-                this.Capture4.Visible = false;
-                this.Capture5.Visible = false;
-                this.Capture6.Visible = false;
-                this.Capture7.Visible = false;
-                this.Capture8.Visible = false;
-                this.Capture9.Visible = false;
-                this.Capture10.Visible = false;
-                this.Capture11.Visible = false;
-                this.Capture12.Visible = true;
-                this.Capture13.Visible = false;
-                this.Capture14.Visible = false;
-                this.Capture15.Visible = false;
-                return;
-            }
-
-            if (this.count == 12)
-            {
-                this.Capture1.Visible = false;
-                this.Capture2.Visible = false;
-                this.Capture3.Visible = false;
-                this.Capture4.Visible = false;
-                this.Capture5.Visible = false;
-                this.Capture6.Visible = false;
-                this.Capture7.Visible = false;
-                this.Capture8.Visible = false;
-                this.Capture9.Visible = false;
-                this.Capture10.Visible = false;
-                this.Capture11.Visible = false;
-                this.Capture12.Visible = false;
-                this.Capture13.Visible = true;
-                this.Capture14.Visible = false;
-                this.Capture15.Visible = false;
-                return;
-            }
-
-            if (this.count == 13)
-            {
-                this.Capture1.Visible = false;
-                this.Capture2.Visible = false;
-                this.Capture3.Visible = false;
-                this.Capture4.Visible = false;
-                this.Capture5.Visible = false;
-                this.Capture6.Visible = false;
-                this.Capture7.Visible = false;
-                this.Capture8.Visible = false;
-                this.Capture9.Visible = false;
-                this.Capture10.Visible = false;
-                this.Capture11.Visible = false;
-                this.Capture12.Visible = false;
-                this.Capture13.Visible = false;
-                this.Capture14.Visible = true;
-                this.Capture15.Visible = false;
-                return;
-            }
-
-            if (this.count == 14)
-            {
-                this.Capture1.Visible = false;
-                this.Capture2.Visible = false;
-                this.Capture3.Visible = false;
-                this.Capture4.Visible = false;
-                this.Capture5.Visible = false;
-                this.Capture6.Visible = false;
-                this.Capture7.Visible = false;
-                this.Capture8.Visible = false;
-                this.Capture9.Visible = false;
-                this.Capture10.Visible = false;
-                this.Capture11.Visible = false;
-                this.Capture12.Visible = false;
-                this.Capture13.Visible = false;
-                this.Capture14.Visible = false;
-                this.Capture15.Visible = true;
             }
         }
 
